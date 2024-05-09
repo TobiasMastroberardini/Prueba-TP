@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <h1>Viaje a Orlando</h1>
+
+    </header>
+    <nav id="nav-bar">
+        <button id="menu-toggle">Abrir menu</button>
+        <ul id="nav-ul" class="hidden">
+            <li><a class="nav-a" href="index.html#inicio">Inicio</a></li>
+            <li><a class="nav-a" href="index.html#parques">Parques</a></li>
+            <li><a class="nav-a" href="index.html#clima">Clima</a></li>
+            <li><a class="nav-a" href="index.html#transporte">Transporte</a></li>
+            <li><a class="nav-a" href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <mian>
+        <section>
+            <form id="form-contacto">
+                <div class="div-form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <span id="errorNombre" class="error"></span>
+                </div>
+                <div class="div-form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <span id="errorEmail" class="error"></span>
+                </div>
+                <div class="div-form">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                    <span id="errorTelefono" class="error"></span>
+                </div>
+                <div class="div-form">
+                    <label>Género:</label>
+                    <label for="genero1">Masculino</label>
+                    <input type="radio" id="genero1" name="genero" value="masculino">
+                    <label for="genero2">Femenino</label>
+                    <input type="radio" id="genero2" name="genero" value="femenino">
+
+                    <span id="errorGenero" class="error"></span>
+                </div>
+                <div class="div-form">
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <option value="">Selecciona un país</option>
+                    </select>
+                    <span id="errorPais" class="error"></span>
+                </div>
+
+                <div class="div-form">
+                    <label>¿Deberiamos mejorar la informacion de algo?:</label>
+                    <label for="opcion1">Parques</label>
+                    <input type="checkbox" id="opcion1" name="opcion1" value="opcion1">
+                    <label for="opcion2">Transporte</label>
+                    <input type="checkbox" id="opcion2" name="opcion2" value="opcion2">
+                    <label for="opcion3">Clima</label>
+                    <input type="checkbox" id="opcion3" name="opcion3" value="opcion3">
+
+                    <span id="errorOpciones" class="error"></span>
+                </div>
+                <div class="div-form">
+                    <label for="imagen-form">Imagen:</label>
+                    <input type="file" id="imagen-form" name="imagen-form">
+                    <span id="errorImagen" class="error"></span>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </mian>
+    <script src="script.js"></script>
+</body>
+
+</html>
