@@ -1,0 +1,385 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: monospace;
+    font-size: 15px;
+    color: #fff;
+}
+
+main {
+    background: #fff;
+    color: #000;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#footer-parques {
+    position: sticky;
+    bottom: 0;
+}
+
+header {
+    background-color: #1C468E;
+    color: #fff;
+    text-align: center;
+}
+
+footer {
+    background-color: #0F2D5C;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    padding-bottom: 15px;
+}
+
+a {
+    color: #fff;
+}
+
+#a-main-parques {
+    color: #000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: #0F2D5C;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    color: #fff;
+    display: inline;
+    /* Muestra los elementos de la lista en línea */
+    margin-right: 20px;
+    /* Espaciado entre elementos */
+}
+
+nav ul li a {
+
+    /* Color del enlace */
+    text-decoration: none;
+    /* Elimina la decoración de subrayado predeterminada */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    /* Agrega subrayado al pasar el mouse sobre el enlace */
+}
+
+
+
+section {
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.tarjeta {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjeta-contenedor {
+    max-width: 80%;
+}
+
+.imagen-referencia {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    /* Borde negro de 2px */
+    border-radius: 8px;
+    max-width: 100%;
+    /* Bordes ligeramente redondeados */
+}
+
+.imagen-con-difuminado {
+    filter: blur(5px);
+    /* Ajusta el valor de blur según el nivel de difuminado deseado */
+}
+
+section img {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.color2 {
+    background-color: #1C468E;
+    color: #fff;
+}
+
+.imagen-referencia1 {
+    min-width: 100%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.intro-orlando {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* CSS form */
+
+.error {
+    color: red;
+}
+
+/* Estilos generales del formulario */
+form {
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.h2-form {
+    text-align: center;
+    color: #333;
+}
+
+.div-form {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 7px;
+    max-width: 90%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#imagen-form {
+    color: #000;
+}
+
+.error {
+    color: red;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Estilos para las celdas */
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Estilos para las celdas de la primera columna */
+table td:first-child {
+    font-weight: bold;
+    width: 25%;
+}
+
+/* Estilos para resaltar el texto en negrita */
+table strong {
+    font-weight: bold;
+}
+
+/* Estilos para la lista de parques */
+#lista-parques {
+    list-style: none;
+    padding: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+/* Estilos para los elementos de la lista */
+#lista-parques li {
+    margin-bottom: 20px;
+
+    border-top: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+/* Estilos para el texto en negrita */
+#lista-parques strong {
+    font-weight: bold;
+}
+
+/* Estilos para las ubicaciones */
+#lista-parques .ubicacion {
+    color: #666;
+}
+
+/* Estilos para las atracciones destacadas */
+#lista-parques .atracciones {
+    color: #777;
+}
+
+/* Estilos para la tabla en PC de escritorio */
+@media (min-width: 1200px) {
+
+    table th,
+    table td {
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+/* Estilos para la tabla en tablet */
+@media (max-width: 1199px) and (min-width: 768px) {
+
+    table th,
+    table td {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/* Estilos para la tabla en celular */
+@media (max-width: 767px) {
+
+    main {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    table th,
+    table td {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    section {
+        min-height: 500px;
+        min-width: 100%;
+    }
+
+    section img {
+        max-width: 100%;
+        min-height: 200px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-bar ul {
+        display: none;
+
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #nav-bar li {
+        padding: 10px;
+        transition: height 0.3s ease;
+    }
+
+    #nav-bar a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .imagen-referencia {
+        min-width: 100%;
+    }
+
+    .imagen-referencia1 {
+        width: 100%;
+        height: auto;
+        /* Esto mantiene la proporción de aspecto */
+        display: block;
+    }
+
+    #ul-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .li-footer {
+        padding: 5px;
+    }
+}
+
+#menu-toggle {
+    display: none;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    justify-content: center;
+}
+
+
+
+
+.hidden {
+    display: none;
+}
